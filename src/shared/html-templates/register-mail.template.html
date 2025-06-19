@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #dfdfdf;
+            font-family: 'Roboto', sans-serif;
+        }
+        .header { background-color: #f8f8f8; padding: 20px; text-align: center; }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            background: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            gap: 10px;
+            place-self: anchor-center;
+            margin: auto;
+        }
+        h1 {
+            font-size: 20px;
+            margin: 5px 0;
+        }
+        a {
+            background-color: #30b0dd;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: fit-content;
+            text-decoration: none;
+        }
+        p {
+            font-size: 14px;
+            margin: 0;
+        }
+        ul {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊¡Bienvenido a <strong style="color: #37a9fa">PocketMoney</strong>!</h1>
+        <p>
+            Estás a un paso de tomar el control de tus finanzas. Por favor, confirma tu dirección de correo para activar tu cuenta:
+        </p>
+        <a href="{{link}}">Confirmar correo</a>
+        <p><strong>¿Por qué es importante?</strong>
+            Confirmando tu correo, podrás:</p>
+        <ul>
+            <li>Recibir alertas de gastos</li>
+            <li>Restablecer tu contraseña si lo olvidas</li>
+            <li>Acceder a informes mensuales personalizados</li>
+        </ul>
+
+    </div>
+    <p style="text-align: center; font-size: 12px; color: #7c7c7c; max-width: 600px; place-self: anchor-center; margin-top: 10px">
+        © {{year}} PocketMonety - All rights reserved.
+        Este es un correo automático, no lo respondas.
+    </p>
+</body>
+</html>
