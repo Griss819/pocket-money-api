@@ -1,8 +1,8 @@
-# 🧠 Home Expense Monitor – API
-This is the backend service for Home Expense Monitor, a smart platform for managing daily household expenses. Built with modern web technologies, this API provides secure, efficient, and scalable endpoints to support all core functionalities of the application.
+# 💸 PocketMoney – API
+This is the backend service for PocketMoney client, a smart platform for managing daily household expenses. Built with modern web technologies, this API provides secure, efficient, and scalable endpoints to support all core functionalities of the application.
 
-# ⚙️ Key Features:
-RESTful API built with NestJS and .NET (if both are involved or just .NET if you dropped Nest)
+# 🔍 Features:
+RESTful API built with NestJS
 
 Authentication & Authorization for protected access
 
