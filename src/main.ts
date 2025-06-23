@@ -8,8 +8,8 @@ async function bootstrap() {
   const config = app.get(ConfigService);
 
   await app.listen(process.env.PORT ?? 3000);
-
-  if (process.env.NODE_ENV === 'development') {
+  app.enableCors();
+  /*if (process.env.NODE_ENV === 'development') {
     app.enableCors();
   } else {
     app.enableCors({
@@ -18,6 +18,6 @@ async function bootstrap() {
       allowedHeaders: 'Content-Type,Authorization',
       credentials: true,
     });
-  }
+  }*/
 }
 bootstrap();

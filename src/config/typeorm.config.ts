@@ -5,7 +5,7 @@ import { config } from 'dotenv';
 config();
 
 const configService = new ConfigService();
-
+console.log(process.env.DATABASE_HOST);
 export const AppDataSource = new DataSource({
     type: 'postgres',
     host: configService.get<string>('DATABASE_HOST'),

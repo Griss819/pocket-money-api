@@ -23,7 +23,7 @@ export class MailService {
   }
 
   async sendConfirmationEmail(email: string, token: string): Promise<void> {
-    const confirmationLink = `${process.env.DOMAIN_URL}/auth/confirm-email?code=${token}`;
+    const confirmationLink = `${process.env.API_URL}/auth/confirm-email?code=${token}`;
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
