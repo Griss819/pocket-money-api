@@ -8,7 +8,7 @@
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "start": "nest start",
+    "start": "cross-env NODE_ENV=production node dist/main",
     "start:dev": "cross-env NODE_ENV=development nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "cross-env NODE_ENV=production node dist/main",
@@ -21,6 +21,7 @@
     "migration:generate": "npx ts-node ./node_modules/typeorm/cli.js migration:generate -d ./src/config/typeorm.config.ts",
     "migration:create": "npx ts-node ./node_modules/typeorm/cli.js migration:create -d ./src/config/typeorm.config.ts",
     "migration:run": "npx ts-node ./node_modules/typeorm/cli.js migration:run -d ./src/config/typeorm.config.ts",
+    "migration:run-prod": "npx NODE_ENV=production ts-node ./node_modules/typeorm/cli.js migration:run -d ./src/config/typeorm.config.ts",
     "migration:revert": "npx ts-node ./node_modules/typeorm/cli.js migration:revert -d ./src/config/typeorm.config.ts"
   },
   "dependencies": {
